@@ -9,7 +9,7 @@ class node:
         return self.data
 class linked_list:
     def __init__(self):
-        self.next=None
+        self.head=None
     def insertion_beg(self,data):
         new_node=node(data)
         new_node.next=self.head
