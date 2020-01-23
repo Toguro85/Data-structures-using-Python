@@ -15,8 +15,8 @@ class linked_list:
         new_node.next=self.head
         self.head=new_node
     def insertion_after(self,prev_node,data):
-        if prev_node.get_next()==None:
-            node.insertion_beg(prev_node)
+        if prev_node.get_next==None:
+            ins=insertion_beg(data)
         else:
             new_node=node(data)
             prev_node.next=prev_node.get_next()
