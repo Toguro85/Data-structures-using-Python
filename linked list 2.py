@@ -19,7 +19,7 @@ class linked_list:
             self.insertion_beg(data)
         else:
             new_node=node(data)
-            prev_node.next=prev_node.get_next()
+            new_node.next=prev_node.get_next()
             prev_node.next=new_node
     def traverse_ll(self):
         count=0
