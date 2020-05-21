@@ -1,3 +1,9 @@
+'''
+1. WAP to search a BST for a specific node and Insert nodes in BST. Given alphabets ‘A’,
+‘P’, ‘V’ etc. as the data element of nodes instead of numbers. Construct a BST and search
+for a specific alphabet the user enters in the given BST.
+'''
+
 class Node:
     def __init__(self,key):
         self.right=None
