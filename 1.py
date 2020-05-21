@@ -1,35 +1,49 @@
-import array as arr
-a=int(input())
-list1=[]
-arr2=[]
-print("list1 is:")
-for i in range(0,a):
-    a3=int(input())
-    list1.append(a3)
-arr2=arr.array("i",list1)
+class Node:
+    def __init__(self,key):
+        self.right=None
+        self.left=None
+        self.val=key
+
+def insert(root,node):
+    if root is None:
+        root=node
+    else:
+        if root.val<node.val:
+            if root.right is None:
+                root.right=node
+            else:
+                insert(root.right,node)
+        else:
+            if root.left is None:
+                root.left=node
+            else:
+                insert(root.left,node)
+
+def search(root,key):
+    while root!=None:
+        if ascii(key)>ascii(root.val):
+            root=root.right
+        elif ascii(key)<ascii(root.val):
+            root=root.left
+        else:
+            return True
+    return False
+
+root=Node("A")
+insert(root,Node("P"))
+insert(root,Node("V"))
+insert(root,Node("D"))
+insert(root,Node("E"))
+insert(root,Node("F"))
+insert(root,Node("G"))
+insert(root,Node("H"))
+
+print("Enter alphabet to be searched")
+al=input()
+
+if search(root,al) == True :
+    print("Yes")
+else:
+    print("No")
 
 
-
-print("arr1 is:")
-print(arr2)
-
-    
-list2=[]
-print("list2 is:")
-for i in range(0,a):
-    b=int(input())
-    list2.append(b)
-arr4=arr.array("i",list2)
-print(arr4)
-
-arr5=arr2+arr4
-print(arr5)
-
-print("resultant array is:")
-for i in range(0,len(arr5)):
-    for j in range(i+1,len(arr5)):
-        if (arr5[i]>arr5[j]):
-            temp=arr5[i]
-            arr5[i]=arr5[j]
-            arr5[j]=temp
-    print(arr5[i])
