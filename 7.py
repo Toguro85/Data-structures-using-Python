@@ -1,3 +1,8 @@
+'''
+Find the lowest common ancestor in a Binary Search Tree(BST).Given values of two
+nodes n1 and n2 in a Binary Search Tree, find the Lowest Common Ancestor (LCA).
+You may assume that both the values exist in the tree.
+'''
 class Node:
     def __init__(self,key):
         self.key=key
