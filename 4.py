@@ -1,3 +1,8 @@
+'''
+WAP to print the inorder predecessor and successor for a given key in Binary Search
+Tree .
+'''
+
 class Node:
     def __init__(self,key):
         self.right=None
