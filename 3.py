@@ -1,3 +1,7 @@
+'''
+Find the minimum value in a Binary Search Tree (BST) and print its location.
+'''
+
 class Node:
     def __init__(self,key):
         self.key=key
