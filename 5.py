@@ -1,6 +1,5 @@
 '''
-WAP to print the inorder predecessor and successor for a given key in Binary Search
-Tree .
+A program to check if a binary tree is BST or not
 '''
 class Node:
     def __init__(self,key):
