@@ -1,3 +1,10 @@
+'''
+WAP to delete a specific node from the BST and print the post-order traversal for the
+same.
+'''
+
+
+
 class Node:
     def __init__(self,key):
         self.right=None
