@@ -1,3 +1,6 @@
+'''
+The given binary tree is not a Binary Search Tree (BST) then print the location of 1 st violation.
+'''
 class Node:
     def __init__(self,key):
         self.key=key
